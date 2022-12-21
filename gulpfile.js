@@ -49,4 +49,4 @@ gulp.task('watch', function() {
     gulp.watch('src/js/**/*', ['js']);
 });
 
-gulp.task('default',['clean','tmpl','scss','js','copy','done']);
+gulp.task('default',['scss','js','copy','done']);
