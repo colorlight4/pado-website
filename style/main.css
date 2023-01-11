@@ -22,7 +22,7 @@ header, main, footer {
 }
 
 header {
-    margin: 90px auto 50px;
+    margin: 90px auto 0;
     text-align: center;
 }
     header a {
@@ -43,6 +43,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 50px auto;
 }
     main .steps {
         display: flex; 
@@ -88,32 +89,30 @@ main {
                     font-size: .8rem;
                 }
 
-            .class1 {
+            /* wasser */ .class1 {
                 background-image: url("../img/markus-spiske-sFydXGrt5OA-unsplash.jpg");
             }
-            .class2 {
-                background-image: url("../img/markus-spiske-sFydXGrt5OA-unsplash.jpg");
+            /* mulch */ .class2 {
+                background-image: url("../img/paul-green-mGQfQe3EOBI-unsplash.jpg");
             }
-            .class3 {
-                background-image: url("../img/markus-spiske-sFydXGrt5OA-unsplash.jpg");
+            /* kompost */ .class3 { 
+                background-image: url("../img/edward-howell-v7G32kVgM84-unsplash.jpg");
             }
-            .class4 {
-                background-image: url("../img/markus-spiske-sFydXGrt5OA-unsplash.jpg");
+            /* rosen */ .class4 {
+                background-image: url("../img/serafima-lazarenko-gKQk5S_klWY-unsplash.jpg");
             }
-            .class5 {
-                background-image: url("../img/markus-spiske-sFydXGrt5OA-unsplash.jpg");
+            /* hecken */ .class5 {
+                background-image: url("../img/annie-spratt-wSOyw11WQxM-unsplash.jpg");
             }
-            .class6 {
-                background-image: url("../img/markus-spiske-sFydXGrt5OA-unsplash.jpg");
+            /* teiche */ .class6 {
+                background-image: url("../img/fiona-smallwood-rA2t29hZj1s-unsplash.jpg");
             }
-            .class7 {
-                background-image: url("../img/markus-spiske-sFydXGrt5OA-unsplash.jpg");
+            /* rasen */ .class7 {
+                background-image: url("../img/pankaj-shah-1ff_i7jO-4g-unsplash.jpg");
             }
-            .class8 {
-                background-image: url("../img/markus-spiske-sFydXGrt5OA-unsplash.jpg");
+            /* möbel */ .class8 {
+                background-image: url("../img/zoe-schaeffer-W_ISm5LwKHQ-unsplash.jpg");
             }
-
-
 
     main .cta {
         text-align: center;
