@@ -13,10 +13,11 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    padding: 20px;
 }
 
 header, main, footer {
-    width: 100vw;
+    width: calc(100vw - 40px);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -29,6 +30,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         text-decoration: none;
         color: #000;
         font-size: 2em;
@@ -49,10 +51,18 @@ main {
         display: flex; 
         justify-content: center; 
         align-items: center;
+        flex-wrap: wrap;
+        margin: 0 calc(5%/4);
     }
+        main .step {
+            width: calc(33% - 10px);
+            min-width: 200px;
+            padding-right: 10px;
+        }
         main .num {
             font-weight: 900;
         }
+
     main a:hover,
     main a:hover .txt {
         text-decoration: none;
@@ -64,17 +74,22 @@ main {
         margin-top: 50px;
     }
         .cta-img {
-            width: calc(95%/4);
-            margin-bottom: calc(5%/4);
+            flex: 1;
+            min-width: calc(100% / 5);
+            margin: calc(5%/4);
             background: #333;
-            min-width: 170px;
             background-size: cover;
             background-repeat: no-repeat;
         }
+            @media screen and (max-width: 700px) {
+                .cta-img {
+                    min-width: calc(100% / 3);
+                }    
+            }
             .cta-img a {
                 color: #fff;
                 text-align: center;
-                padding: 130px 0 20px;    
+                padding: 130px 0 20px;  
                 display: block;
                 background: rgba(0,0,0,.3);
                 text-decoration: none;
